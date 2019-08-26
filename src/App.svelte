@@ -1,11 +1,13 @@
 <script>
-	export let name;
+
 </script>
 
-<style>
-	h1 {
-		color: purple;
-	}
+<style type="text/postcss">
+  .test-apply {
+    @apply w-3/5 bg-blue-900 mx-auto;
+  }
 </style>
 
-<h1>Hello {name}!</h1>
+<main class="test-apply">
+  <h1 class="text-xl text-blue-500">Hello</h1>
+</main>
