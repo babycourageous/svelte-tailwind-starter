@@ -10,7 +10,9 @@ Erroneous errors with tailwind-style @ rules [link](https://github.com/Unwritten
 
 ---
 
-This is a starter project template for [Svelte](https://svelte.dev) apps. It comes with [TailwindCSS](https://tailwindcss.com/) already baked in. To learn more about how to use Tailwind, check out the very awesome [Tailwind docs](https://tailwindcss.com/docs/installation/)
+This is a starter project template for [Svelte](https://svelte.dev) apps. It comes with [TailwindCSS](https://tailwindcss.com/) already baked in. Tailwind classes can be applied to DOM elements in the template or used in `<style>` tags with `@apply` and preprocessed with [svelte-preprocess-postcss](https://github.com/TehShrike/svelte-preprocess-postcss). 
+
+To learn more about how to use Tailwind, check out the very awesome [Tailwind docs](https://tailwindcss.com/docs/installation/)
 
 ## Use Degit
 
