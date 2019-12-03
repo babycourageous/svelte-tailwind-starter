@@ -4,10 +4,11 @@
 
 <style type="text/postcss">
   .test-apply {
-    @apply w-3/5 bg-blue-900 mx-auto;
+    @apply w-3/5 mx-auto p-4;
   }
 </style>
 
-<main class="test-apply">
-  <h1 class="text-xl text-blue-500">Hello</h1>
+<main class="test-apply flex flex-col items-center">
+  <h1 class="font-thin text-6xl text-orange-500 uppercase">Hello {name}!</h1>
+  <img class="w-2/3 object-cover" src="/rey.jpg" alt="" />
 </main>
