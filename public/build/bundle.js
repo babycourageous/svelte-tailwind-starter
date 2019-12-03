@@ -306,6 +306,7 @@ var app = (function () {
     			add_location(h1, file, 14, 2, 263);
     			attr_dev(img, "class", "w-2/3 object-cover");
     			if (img.src !== (img_src_value = "/rey.jpg")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "");
     			add_location(img, file, 15, 2, 341);
     			attr_dev(main, "class", "test-apply flex flex-col items-center svelte-1mvyzzd");
     			add_location(main, file, 13, 0, 208);

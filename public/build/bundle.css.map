@@ -5,7 +5,7 @@
     "../../src/App.svelte"
   ],
   "sourcesContent": [
-    "<script>\n  export let name\n</script>\n\n<style type=\"text/postcss\">.test-apply {\n  width: 60%;\n  margin-left: auto;\n  margin-right: auto;\n  padding: 1rem;\n}\n\n/*# sourceMappingURL=src/App.svelte.map */</style>\n\n<main class=\"test-apply flex flex-col items-center\">\n  <h1 class=\"font-thin text-6xl text-orange-500 uppercase\">Hello {name}!</h1>\n  <img class=\"w-2/3 object-cover\" src=\"/rey.jpg\" />\n</main>\n"
+    "<script>\n  export let name\n</script>\n\n<style type=\"text/postcss\">.test-apply {\n  width: 60%;\n  margin-left: auto;\n  margin-right: auto;\n  padding: 1rem;\n}\n\n/*# sourceMappingURL=src/App.svelte.map */</style>\n\n<main class=\"test-apply flex flex-col items-center\">\n  <h1 class=\"font-thin text-6xl text-orange-500 uppercase\">Hello {name}!</h1>\n  <img class=\"w-2/3 object-cover\" src=\"/rey.jpg\" alt=\"\" />\n</main>\n"
   ],
   "names": [],
   "mappings": "AAI2B,WAAW,eAAC,CAAC,AACtC,KAAK,CAAE,GAAG,CACV,WAAW,CAAE,IAAI,CACjB,YAAY,CAAE,IAAI,CAClB,OAAO,CAAE,IAAI,AACf,CAAC"
