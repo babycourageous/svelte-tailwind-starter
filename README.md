@@ -1,18 +1,11 @@
 # Svelte Starter with Tailwind
 
-With assistance from these github issues: 
+This is a starter project template for [Svelte](https://svelte.dev) apps. 
 
-How to configure Tailwind in a svelte project? [link](https://github.com/tailwindcss/discuss/issues/254)
-
-Erroneous errors with tailwind-style @ rules [link](https://github.com/UnwrittenFun/svelte-vscode/issues/47)
-
-*Psst — looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
-
----
-
-This is a starter project template for [Svelte](https://svelte.dev) apps. It comes with [TailwindCSS](https://tailwindcss.com/) already baked in. Tailwind classes can be applied to DOM elements in the template or used in `<style>` tags with `@apply` and preprocessed with [svelte-preprocess-postcss](https://github.com/TehShrike/svelte-preprocess-postcss). 
-
-To learn more about how to use Tailwind, check out the very awesome [Tailwind docs](https://tailwindcss.com/docs/installation/)
+- It comes with [TailwindCSS](https://tailwindcss.com/) already baked in (The very awesome [Tailwind docs](https://tailwindcss.com/docs/installation/)).
+- Uses [svelte-preprocess](https://github.com/sveltejs/svelte-preprocess) to preprocess Tailwind classes used in `<style>` tags with `@apply`. 
+- Uses [@rollup/plugin-node-resolve](https://github.com/rollup/plugins/tree/master/packages/node-resolve#extensions) to resolve Svelte files even with `.svelte` extension left off of import.
+- Uses [`rollup-plugin-alias`](https://github.com/rollup/plugins/tree/master/packages/alias) to alias the `src` directory to `@` in order to make deeply nested local imports cleaner.
 
 ## Use Degit
 
@@ -42,8 +35,6 @@ Navigate to [localhost:5000](http://localhost:5000).
 
 LiveReload is enabled so when you edit a component file in `src` and save it the browser will reload the page to see your changes.
 
-By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
-
 ## Building and running for production
 
 To build an optimised version of the app:
@@ -63,3 +54,11 @@ If you're building a single-page app (SPA) with multiple routes, sirv needs to b
 ```js
 "start": "sirv public --single"
 ```
+
+**With assistance from the following:**
+
+How to configure Tailwind in a svelte project? [link](https://github.com/tailwindcss/discuss/issues/254)
+
+Erroneous errors with tailwind-style @ rules [link](https://github.com/UnwrittenFun/svelte-vscode/issues/47)
+
+Import Svelte component ommiting .svelte extension [link](https://stackoverflow.com/questions/58715992/import-svelte-component-ommiting-svelte-extension)
