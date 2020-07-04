@@ -5,8 +5,11 @@ import livereload from 'rollup-plugin-livereload'
 import { terser } from 'rollup-plugin-terser'
 import postcss from 'rollup-plugin-postcss'
 import autoPreprocess from 'svelte-preprocess'
+import alias from '@rollup/plugin-alias'
+import path from 'path'
 
 const production = !process.env.ROLLUP_WATCH
+const projectRootDir = path.resolve(__dirname)
 
 export default {
   input: 'src/main.js',
@@ -40,6 +43,11 @@ export default {
       extensions: ['.svelte', '.js'],
     }),
     commonjs(),
+    alias({
+      entries: [
+        { find: '@', replacement: path.resolve(projectRootDir, 'src') },
+      ],
+    }),
 
     // In dev mode, call `npm run start` once
     // the bundle has been generated
